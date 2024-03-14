@@ -1,19 +1,22 @@
 #2. Start of tomcat configuration 
 
-#Tomcat server configuration:
-find / -name server.xml context.xml
-vim /opt/tomcat9/conf/server.xml
-vi /opt/tomcat9/webapps/manager/META-INF/context.xml
-vi /opt/tomcat9/conf/tomcat-user.xml  # to add user
+#Tomcat server configuration, to change port number among others vi into the path below and edit
+/opt/tomcat10/server.xml 
+or
+find / -name server.xml
 
-	<user username="landmark" password="admin" roles="manager-gui,admin-gui"/>
-	
 
-/opt/tomcat9/conf/context.xml
+ #to add users to tomcat vi into the path below and add the script last but one line and edit
 
- vi /opt/tomcat9/webapps/manager/META-INF/context.xml
-  
   vi /opt/tomcat9/conf/tomcat-user.xml  # to add user
-  
+<user username="landmark" password="admin123" roles="manager-gui,admin-gui,manager-script"/>
+<user username="simon" password="admin123" roles="admin-gui"/> 
 	
 	username YourName password=PassWord   roles=manager-gui
+
+#to allow remote access to gui comment out the value className
+#go to vim /opt/tomcat9/webapps/manager/META-INF/context.xml and comment out as below
+
+<!--Valve className="org.apache.catalina.valves.RemoteAddrValve"
+         allow="127\.\d+\.\d+\.\d+|::1|0:0:0:0:0:0:0:1" /-->
+
