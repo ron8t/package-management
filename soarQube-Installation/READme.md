@@ -1,10 +1,10 @@
-#  **<span style="color:green">Landmark Technologies, Ontario, Canada.</span>**
+##  **<span style="color:green">Landmark Technologies, Ontario, Canada.</span>**
 ### **<span style="color:green">Contacts: +1437 215 2483<br> WebSite : <http://mylandmarktech.com/></span>**
 ### **Email: mylandmarktech@gmail.com**
 
 
 
-## SonarQube Installation And Setup In AWS EC2 Redhat Instance.
+### SonarQube Installation And Setup In AWS EC2 Redhat Instance.
 ##### Prerequisite
 + AWS Acccount.
 + Create Redhat EC2 T2.medium Instance with 4GB RAM.
@@ -61,9 +61,9 @@ sh /opt/sonarqube/bin/linux-x86-64/sonar.sh status
 ```
 
 ### 7. Ensure that SonarQube is running and Access sonarQube on the browser
-# sonarqube default port is = 9000
-# get the sonarqube public ip address 
-# publicIP:9000
+### sonarqube default port is = 9000
+### get the sonarqube public ip address 
+### publicIP:9000
 ```sh
 curl -v localhost:9000
 54.236.232.85:9000
