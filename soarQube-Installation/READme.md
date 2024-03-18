@@ -61,9 +61,9 @@ sh /opt/sonarqube/bin/linux-x86-64/sonar.sh status
 ```
 
 ### 7. Ensure that SonarQube is running and Access sonarQube on the browser
-### sonarqube default port is = 9000
-### get the sonarqube public ip address 
-### publicIP:9000
+#### sonarqube default port is = 9000
+#### get the sonarqube public ip address 
+#### publicIP:9000
 ```sh
 curl -v localhost:9000
 54.236.232.85:9000
