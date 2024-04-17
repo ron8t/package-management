@@ -28,7 +28,7 @@ sudo yum install java-1.8.0-openjdk-devel -y
 ``` sh
 sudo wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.86/bin/apache-tomcat-9.0.86.zip
 
-https://dlcdn.apache.org/tomcat/tomcat-10/v10.1.19/bin/apache-tomcat-10.1.19.zip
+#https://dlcdn.apache.org/tomcat/tomcat-10/v10.1.19/bin/apache-tomcat-10.1.19.zip
 
 sudo unzip apache-tomcat-9.0.86.zip
 sudo rm -rf apache-tomcat-9.0.86.zip
