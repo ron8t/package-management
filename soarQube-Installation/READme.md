@@ -38,8 +38,8 @@ sudo service sshd restart
 
 ``` sh
 cd /opt
-sudo yum -y install unzip wget git
-sudo yum install  java-11-openjdk-devel
+sudo yum install unzip wget git -y
+sudo yum install  java-11-openjdk-devel -y
 ```
 ### 4. Download and extract the SonarqQube Server software.
 ```sh
@@ -65,7 +65,7 @@ sh /opt/sonarqube/bin/linux-x86-64/sonar.sh status
 #### get the sonarqube public ip address 
 #### publicIP:9000
 ```sh
-curl -v localhost:9000
+mv
 54.236.232.85:9000
 default USERNAME: admin
 default password: admin
