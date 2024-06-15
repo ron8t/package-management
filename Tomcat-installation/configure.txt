@@ -7,11 +7,11 @@ find / -name server.xml
 
 #to add users to tomcat vi into the path below and add the script last but one line and edit
 
-  vi /opt/tomcat10/conf/tomcat-users.xml  
+  vi /opt/tomcat10/conf/tomcat-user.xml  
 
 #to add user
 <user username="landmark" password="admin123" roles="manager-gui,admin-gui,manager-script"/>
-<user username="simon" password="admin123" roles="admin-gui"/> 
+
 	
 #username YourName password=PassWord   roles=manager-gui
 
