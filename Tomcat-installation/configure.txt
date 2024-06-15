@@ -1,13 +1,13 @@
 #2. Start of tomcat configuration 
 
 #Tomcat server configuration, to change port number among others vi into the path below and edit
-/opt/tomcat10/server.xml 
+/opt/tomcat10/conf/server.xml 
 or
 find / -name server.xml
 
 #to add users to tomcat vi into the path below and add the script last but one line and edit
 
-  vi /opt/tomcat9/conf/tomcat-users.xml  
+  vi /opt/tomcat10/conf/tomcat-users.xml  
 
 #to add user
 <user username="landmark" password="admin123" roles="manager-gui,admin-gui,manager-script"/>
@@ -16,7 +16,7 @@ find / -name server.xml
 #username YourName password=PassWord   roles=manager-gui
 
 #to allow remote access to gui comment out the value className
-#vim /opt/tomcat9/webapps/manager/META-INF/context.xml and comment out as below
+#vi /opt/tomcat9/webapps/manager/META-INF/context.xml and comment out as below
 
 <!--Valve className="org.apache.catalina.valves.RemoteAddrValve"
          allow="127\.\d+\.\d+\.\d+|::1|0:0:0:0:0:0:0:1" /-->
