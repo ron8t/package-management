@@ -4,7 +4,9 @@
 # You can execute this script as user-data when launching your EC2 VM.
 sudo timedatectl set-timezone America/New_York
 sudo hostnamectl set-hostname jenkins
-sudo yum install wget -y#ensure java is install before carring out the below script. 
+sudo yum install wget -y
+
+#ensure java is install before carring out the below script. 
 
 #the below script will install jenkins long term release 2024 current script
 
