@@ -19,10 +19,13 @@ https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.ht
   $ sudo su - ansible \
   $ sudo apt install python3 \
   $ sudo apt update \
-  $ sduo apt install software-properties-common \
+  $ sudo apt install software-properties-common \
   $ sudo apt-add-repository --yes --update ppa:ansible/ansible \
   $ sudo apt install ansible -y
-
+  
+   $sudo apt install sshpass
+   $sudo chown -R ansible:ansible /etc/ansible
+   $vi /etc/ansible/ansible.cfg
 ............................................................................................................
 
 ## **Ansible installation on REDHAT EC2**
