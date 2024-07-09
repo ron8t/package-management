@@ -26,11 +26,11 @@ sudo yum install java-1.8.0-openjdk-devel -y
 ## Install Tomcat version 10
 ### Download and extract the tomcat server
 ``` sh
-sudo wget https://dlcdn.apache.org/tomcat/tomcat-10/v10.1.24/bin/apache-tomcat-10.1.24.zip
-sudo unzip apache-tomcat-10.1.24.zip 
-sudo rm -rf apache-tomcat-10.1.24.zip 
+sudo wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.91/bin/apache-tomcat-9.0.91.zip
+sudo unzip apache-tomcat-9.0.91.zip 
+sudo rm -rf apache-tomcat-9.0.91.zip 
 ### rename tomcat for good naming convention
-sudo mv apache-tomcat-10.1.24 tomcat10 
+sudo mv apache-tomcat-9.0.91. tomcat10 
 ### assign executable permissions to the tomcat home directory
 sudo chmod 777 -R /opt/tomcat10
 sudo chown ec2-user -R /opt/tomcat10
